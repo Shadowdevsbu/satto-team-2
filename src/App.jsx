@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// App.jsx
+import React from 'react';
+import Sidebar from './component/studentSidebar';
 import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div className='text-center'>DOzie</div>
+    <div className="flex font-inter min-h-screen">
+      <Sidebar />
+      <main className="flex-1 bg-gray-200 p-6">
+        <h1 className="text-2xl font-bold">Welcome to Satto</h1>
+        {/* Main content*/}
+      </main>
+    </div>
+  );
+};
 
-    </>
-  )
-}
-
-export default App
+export default App;

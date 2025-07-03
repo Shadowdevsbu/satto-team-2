@@ -12,6 +12,9 @@ export default {
     'dark-text': '#404040',
     'pure-white': '#FFFFFF',
   },
+  fontFamily: {
+    inter: ['Inter', 'sans-serif'],
+  },
   theme: {
     extend: {},
   },
