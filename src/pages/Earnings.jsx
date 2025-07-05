@@ -11,8 +11,8 @@ export default function Earnings() {
   return (
     <div className="min-h-screen flex bg-[#F5F5F5] text-[#404040] font-sans">
 
-<aside className="w-52 bg-white py-6 flex flex-col justify-between border-r border-gray-200">
-  <div className="space-y-6">
+<aside className="w-52 bg-white py-6 flex flex-col border-r border-gray-200">
+  <div className="space-y-6 flex-1">
     <h1 className="text-2xl px-12 font-bold text-black">SATTO</h1>
 
     <nav className="space-y-1">
@@ -50,7 +50,7 @@ export default function Earnings() {
 
 
 
-      <main className="flex-1 p-8">
+      <main className="flex-1 p-8 border-gray-100">
         <h2 className="text-2xl font-bold">Your Earnings</h2>
         <p className="text-sm text-gray-500 mt-1 py-2">
             Track your income from completed tasks and payouts.
