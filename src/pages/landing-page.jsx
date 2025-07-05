@@ -6,4 +6,4 @@ const LandingPage = () => {
   )
 }
 
-export default landing
+export default LandingPage
