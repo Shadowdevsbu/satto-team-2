@@ -7,9 +7,9 @@ import { FaCoins,FaClock,FaClipboardList   } from "react-icons/fa";
 import { ArrowUp, Search } from "lucide-react";
 
 
-export default function Earnings() {
+const Earnings = () => {
   return (
-    <div className="min-h-screen flex bg-[#F5F5F5] text-[#404040] font-sans">
+    <div className="min-h-screen flex bg-[#F5F5F5] text-[#404040]">
 
 <aside className="w-52 bg-white py-6 flex flex-col justify-between border-r border-gray-200">
   <div className="space-y-6">
@@ -234,12 +234,9 @@ export default function Earnings() {
     Find Tasks
   </button>
 </div>
-
-
-
-
-
       </main>
     </div>
   );
 }
+
+export default Earnings
