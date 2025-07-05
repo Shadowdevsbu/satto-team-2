@@ -74,7 +74,7 @@ const Dashboard = () => {
               {stats.map((stat, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center">
                   <p className="text-black font-semibold text-base">{stat.label}</p>
-                  <p className={`text-4xl font-bold ${stat.color}`}>{stat.value}</p>
+                  <p className={`text-4xl ${stat.color}`}>{stat.value}</p>
                 </div>
               ))}
             </div>
