@@ -9,7 +9,6 @@ const App = () => {
   return (
    <Routes>
    <Route path='/' element={<LandingPage />}/>
-   
     <Route path='/dashboard' element={<HomeLayout />}>
     <Route index element={<Dashboard />} />
     </Route>

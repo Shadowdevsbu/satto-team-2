@@ -15,7 +15,7 @@ const Sidebar = () => {
     { label: 'Post Task', path: '/dashboard/post-task', icon: <Pencil size={18} /> },
     { label: 'My Tasks', path: '/dashboard/tasks', icon: <ListTodo size={18} /> },
     { label: 'Messages', path: '/dashboard/messages', icon: <MessageSquare size={18} /> },
-    { label: 'Settings', path: '/dashboard/settings', icon: <Settings size={18} /> }, // ✅
+    { label: 'Settings', path: '/dashboard/settings', icon: <Settings size={18} /> }, 
     { label: 'Payments', path: '/dashboard/payments', icon: <CreditCard size={18} /> },
   ];
 
