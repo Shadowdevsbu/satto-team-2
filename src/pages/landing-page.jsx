@@ -19,7 +19,7 @@ import {
 
 // Hero feature icons
 const featureIconData = [
-  { icon: <Brain size={28} />, title: "Expert-verified homework help" },
+  { icon: <Brain size={28} />, title: "Expert-verified homeworks" },
   { icon: <Book size={28} />, title: "Personalized study plans" },
   { icon: <Lightbulb size={28} />, title: "Instant verified answers" },
 ];
@@ -32,22 +32,22 @@ const featureSteps = [
   { number: "4", title: "Complete & Get Paid", desc: "Work is submitted, approved, and payment is released, all happens in the app" },
 ];
 
-// Why Satto cards
-const whySattoItems = [
+// Why Satto section (emojis on top, rounded)
+const whySattoCards = [
   {
-    icon: <GraduationCap size={48} className="text-green-700" />,
+    emoji: "🎓",
     title: "Built for Students",
     description: "Satto was created with student struggles in mind, real deadlines, real needs.",
   },
   {
-    icon: <Lock size={48} className="text-green-700" />,
+    emoji: "🔒",
     title: "Escrow-Powered Payments",
     description: "Money is held safely until the job is done right no risks, no games.",
   },
   {
-    icon: <Wallet size={48} className="text-green-700" />,
+    emoji: "💰",
     title: "Earn While You Learn",
-    description: "Use your skills to solve academic challenges, gain experience, and make money.",
+    description: "Use your skills to solve academic gigs, gain experience, and make money.",
   },
 ];
 
@@ -140,15 +140,31 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Why Satto */}
+      {/* Why Satto Section */}
       <section className="mt-48 text-center px-6">
-        <div className="px-6 py-2 inline-block rounded-lg shadow-md mb-8 font-semibold">Why Satto?</div>
-        <h2 className="text-3xl md:text-4xl font-semibold leading-tight mb-12">
+        <div className="px-6 py-2 inline-block rounded-lg shadow-md mb-8 font-semibold bg-green-100">
+          Why Satto?
+        </div>
+
+        <h2 className="text-3xl md:text-4xl font-semibold leading-tight mb-24">
           What if getting academic help or earning from it was simple?
         </h2>
+
         <div className="flex flex-wrap justify-center gap-8">
-          {whySattoItems.map((item, i) => (
-            <WhySattoCard key={i} {...item} />
+          {whySattoCards.map((item, index) => (
+            <div
+              key={index}
+              className="w-80 bg-green-50 rounded-xl shadow-md pt-10 pb-6 px-6 text-center relative"
+            >
+              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md border border-green-100 text-2xl">
+                  {item.emoji}
+                </div>
+              </div>
+
+              <h3 className="text-xl font-semibold mb-2 mt-2">{item.title}</h3>
+              <p className="text-gray-600 text-sm">{item.description}</p>
+            </div>
           ))}
         </div>
       </section>
@@ -173,7 +189,6 @@ const LandingPage = () => {
       <footer className="py-16 mt-48 px-8">
         <div className="max-w-[1200px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
-            {/* Satto Info */}
             <div>
               <h3 className="text-2xl font-bold text-black mb-4">SATTO</h3>
               <p className="text-gray-600 max-w-[311px] text-sm leading-relaxed mb-6">
@@ -188,7 +203,6 @@ const LandingPage = () => {
               </div>
             </div>
 
-            {/* Link Sections */}
             {footerLinks.map((section, i) => (
               <div key={i}>
                 <h4 className="font-semibold text-black mb-4">{section.heading}</h4>
@@ -200,7 +214,6 @@ const LandingPage = () => {
               </div>
             ))}
 
-            {/* Contact Us */}
             <div>
               <h4 className="font-semibold text-black mb-4">Contact us</h4>
               <ul className="space-y-3 text-sm">
@@ -211,7 +224,6 @@ const LandingPage = () => {
             </div>
           </div>
 
-          {/* Copyright */}
           <div className="border-t border-gray-300 mt-12 pt-8 text-center md:flex justify-between items-center text-sm">
             <p className="text-gray-600 mb-4 md:mb-0">Copyright © 2025 Satto</p>
             <div className="flex justify-center md:justify-end gap-4">
@@ -239,14 +251,6 @@ const FeatureIconCard = ({ icon, title }) => (
   <div className="w-64 h-24 bg-gradient-to-br from-green-50 to-green-100 shadow-lg rounded-lg flex flex-col items-center justify-center text-center p-4 hover:-translate-y-2 transition">
     <div className="mb-2">{icon}</div>
     <p className="font-medium">{title}</p>
-  </div>
-);
-
-const WhySattoCard = ({ icon, title, description }) => (
-  <div className="w-80 bg-white rounded-lg shadow-md p-6 text-center flex flex-col items-center justify-center">
-    <div className="mb-4">{icon}</div>
-    <h3 className="text-xl font-semibold mb-2">{title}</h3>
-    <p className="text-gray-600">{description}</p>
   </div>
 );
 
