@@ -128,7 +128,7 @@ const SettingsForm = () => {
                   onChange={(e) => setPhoneNumber(e.target.value)}
                   onFocus={(e) => e.target.select()}
                   id="phoneNumber"
-                  className="w-full md:w-[555px] px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full md:w-[520px] px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
                 />
               </div>
             </form>
