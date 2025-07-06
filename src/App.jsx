@@ -1,4 +1,4 @@
-import Earnings from './pages/Earnings';
+import Earnings from './pages/proposal';
 
 function App() {
   return <Earnings />;
