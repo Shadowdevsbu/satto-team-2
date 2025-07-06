@@ -10,7 +10,7 @@ const AccountSecurity = () => {
   const [showNewPassword, setShowNewPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
-  const passwordRef =  useRef(null)
+  const passwordRef = useRef(null);
   const newPasswordRef = useRef(null);
   const confirmPasswordRef = useRef(null);
 
@@ -18,7 +18,7 @@ const AccountSecurity = () => {
     e.preventDefault();
     if (newPassword !== confirmPassword) {
       alert("New passwords do not match!");
-       confirmPasswordRef.current?.focus();
+      confirmPasswordRef.current?.focus();
       return;
     }
 
