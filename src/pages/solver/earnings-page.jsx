@@ -7,49 +7,9 @@ import { FaCoins,FaClock,FaClipboardList   } from "react-icons/fa";
 import { ArrowUp, Search } from "lucide-react";
 
 
-const Earnings = () => {
+const SolverEarnings = () => {
   return (
     <div className="min-h-screen flex bg-[#F5F5F5] text-[#404040]">
-
-<aside className="w-52 bg-white py-6 flex flex-col justify-between border-r border-gray-200">
-  <div className="space-y-6">
-    <h1 className="text-2xl px-12 font-bold text-black">SATTO</h1>
-
-    <nav className="space-y-1">
-      {[
-        { name: "Dashboard", icon: <RiLayout3Fill size={18} />, active: false },
-        { name: "My tasks", icon: <FaClipboardList  size={18} />, active: false },
-        { name: "Proposals", icon: <BsFilePersonFill size={18} />, active: false },
-        { name: "Messages", icon: <BiSolidMessageAltDetail size={18} />, active: false },
-        { name: "Settings", icon: <FaCirclePause className="rotate-90 " size={18} />, active: false },
-        { name: "Earnings", icon: <FaMoneyBills size={18} />, active: true },
-      ].map(({ name, icon, active }) => (
-        <div
-          key={name}
-          className={`flex items-center gap-3 px-4 py-2 text-sm font-medium cursor-pointer
-            ${
-              active
-                ? "bg-[#C7F7C1] border-l-4 border-[#00894E]"
-                : "text-gray-700 hover:bg-gray-100"
-            }`}
-        >
-          {icon}
-          <span>{name}</span>
-        </div>
-      ))}
-    </nav>
-  </div>
-
-  <div className="pt-6">
-    <div className="flex items-center gap-3 px-4 py-2 text-[#404040] hover:bg-red-100 cursor-pointer rounded-lg text-sm font-medium">
-      <IoLogOut size={18} />
-      <span>Logout</span>
-    </div>
-  </div>
-</aside>
-
-
-
       <main className="flex-1 p-8">
         <h2 className="text-2xl font-bold">Your Earnings</h2>
         <p className="text-sm text-gray-500 mt-1 py-2">
@@ -239,4 +199,4 @@ const Earnings = () => {
   );
 }
 
-export default Earnings
+export default SolverEarnings

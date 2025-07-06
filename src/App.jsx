@@ -1,22 +1,34 @@
 // App.jsx
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Dashboard from './pages/student /dashboard';
+import StudentDashboard from './pages/student /dashboard';
+import SolverDashboard from './pages/solver/dashboard';
 import LandingPage from './pages/landing-page';
-import HomeLayout from './pages/layout/HomeLayout';
-import Earnings from './pages/solver/earnings-page';
+import StudentHomeLayout from './pages/layout/StudentHomeLayout';
+import SolverHomeLayout from './pages/layout/SolverHomeLayout';
+import SolverEarnings from './pages/solver/earnings-page';
 
 const App = () => {
   return (
    <Routes>
    <Route path='/' element={<LandingPage />}/>
-   <Route path='/earnings' element={<Earnings />} /> 
+  
 
    {/* Student Routing */}
-    <Route path='/dashboard' element={<HomeLayout />}>
-    <Route index element={<Dashboard />} />
+    <Route path='/student/dashboard' element={<StudentHomeLayout/>}>
+    <Route index element={<StudentDashboard />} />
     </Route>
+
+     {/* Solver Routing */}
+     <Route path="/solver" element={<SolverHomeLayout />}>
+  <Route path="dashboard" element={<SolverDashboard />} />
+  <Route path="earnings" element={<SolverEarnings />} />
+</Route>
+
+
    </Routes>
+
+   
   );
 };
 

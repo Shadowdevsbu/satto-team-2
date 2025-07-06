@@ -1,7 +1,7 @@
 import React from "react";
 import { Bell, Search, ArrowRight, MoreVertical } from "lucide-react";
 
-const Dashboard = () => {
+const StudentDashboard = () => {
   const userName = "Maro";
   const currentDate = "June 18th, 2025";
 
@@ -86,7 +86,7 @@ const Dashboard = () => {
               <h3 className="text-xl font-semibold text-gray-800">Tasks</h3>
               <button className="text-green-700 hover:underline text-sm">See more</button>
             </div>
-            <div className="flex gap-8 flex-wrap">
+            <div className="flex gap-4 flex-wrap">
               {tasks.map((task, index) => (
                 <div
                   key={index}
@@ -129,4 +129,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default StudentDashboard;
