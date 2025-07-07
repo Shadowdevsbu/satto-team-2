@@ -223,16 +223,16 @@ export default function Earnings() {
             
 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
   {/* Withdraw Funds */}
-  <button className="flex items-center justify-center gap-2 bg-[#00894E] text-white font-medium py-3 rounded-md hover:bg-green-700 transition w-full">
+  <a href ="#"  className="flex items-center justify-center gap-2 bg-[#00894E] text-white font-medium py-3 rounded-md hover:bg-green-700 transition w-full">
     <ArrowUp size={16} />
     Withdraw Funds
-  </button>
+  </a>
 
   {/* Find Tasks */}
-  <button className="flex items-center justify-center gap-2 border border-[#00894E] text-[#00894E] font-medium py-3 rounded-md hover:bg-green-50 transition w-full">
+  <a href ="#" className="flex items-center justify-center gap-2 border border-[#00894E] text-[#00894E] font-medium py-3 rounded-md hover:bg-green-50 transition w-full">
     <Search size={16} />
     Find Tasks
-  </button>
+  </a>
 </div>
 
 
