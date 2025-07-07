@@ -84,7 +84,7 @@ const StudentDashboard = () => {
           <div>
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-xl font-semibold text-gray-800">Tasks</h3>
-              <button className="text-green-700 hover:underline text-sm">See more</button>
+              <button className="text-[#19C966] hover:underline text-sm">See more</button>
             </div>
             <div className="flex gap-4 flex-wrap">
               {tasks.map((task, index) => (
@@ -119,7 +119,7 @@ const StudentDashboard = () => {
                   <MoreVertical className="w-5 h-5 text-gray-500 hover:text-gray-700 cursor-pointer" />
                 </div>
                 <p className="text-sm text-gray-600 mb-2">{note.description}</p>
-                <button className="text-blue-600 hover:underline text-sm">See more</button>
+                <button className="text-[#19C966] hover:underline text-sm">See more</button>
               </div>
             ))}
           </div>

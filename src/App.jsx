@@ -15,8 +15,8 @@ const App = () => {
   
 
    {/* Student Routing */}
-    <Route path='/student/dashboard' element={<StudentHomeLayout/>}>
-    <Route index element={<StudentDashboard />} />
+    <Route path='/student' element={<StudentHomeLayout/>}>
+    <Route path="dashboard" element={<StudentDashboard />} />
     </Route>
 
      {/* Solver Routing */}
