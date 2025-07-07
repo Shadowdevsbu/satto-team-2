@@ -1,6 +1,7 @@
 import ProfileInfo from "../component/SettingsComp/ProfileInfo";
 import AccountSecurity from "../component/SettingsComp/AccountSecurity";
 import NotificationPrefer from "../component/SettingsComp/NotificationPrefer";
+import PaymentInfo from "../component/SettingsComp/PaymentInfo";
 
 const SettingsPage = () => {
   return (
@@ -9,6 +10,7 @@ const SettingsPage = () => {
         <ProfileInfo />
         <AccountSecurity />
         <NotificationPrefer />
+        <PaymentInfo />
       </div>
     </div>
   );
