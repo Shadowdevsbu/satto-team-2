@@ -94,14 +94,10 @@ const PaymentInfo = () => {
             onChange={(e) => {
               setPreferredCurrency(e.target.value);
             }}
-            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 cursor-pointer"
+            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 text-sm md:text-base cursor-pointer"
           >
             {currencies.map((Currency) => (
-              <option
-                key={Currency.value}
-                value={Currency.value}
-                className="text-sm cursor-pointer"
-              >
+              <option key={Currency.value} value={Currency.value}>
                 {Currency.label}
               </option>
             ))}
