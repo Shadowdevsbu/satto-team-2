@@ -6,7 +6,7 @@ import AccountSettings from "../component/SettingsComp/AccountSettings";
 
 const SettingsPage = () => {
   return (
-    <div className="bg-[#E5E7EB] w-full min-h-screen flex items-center justify-center py-6 sm:py-10">
+    <main className="bg-[#E5E7EB] w-full min-h-screen flex items-center justify-center py-6 sm:py-10">
       <div className="flex flex-col gap-4 w-full max-w-2xl px-2 sm:px-0">
         <ProfileInfo />
         <AccountSecurity />
@@ -14,7 +14,7 @@ const SettingsPage = () => {
         <PaymentInfo />
         <AccountSettings />
       </div>
-    </div>
+    </main>
   );
 };
 
