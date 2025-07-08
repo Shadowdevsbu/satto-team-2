@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import StudentDashboard from './pages/student/dashboard';
 import SolverDashboard from './pages/solver/dashboard';
 import LandingPage from './pages/landing-page';
+import FindTask from './pages/find-task';
 import SettingsPage from './pages/SettingsPage';
 import StudentHomeLayout from './pages/layout/StudentHomeLayout';
 import SolverHomeLayout from './pages/layout/SolverHomeLayout';
@@ -13,6 +14,7 @@ const App = () => {
   return (
    <Routes>
    <Route path='/' element={<LandingPage />}/>
+   <Route path='/find-task' element={<FindTask />}/>
   
 
    {/* Student Routing */}
