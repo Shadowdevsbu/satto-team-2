@@ -14,7 +14,7 @@ const AccountSettings = () => {
     <section className="bg-white p-6 rounded-xl shadow-md max-w-[700px] w-full mx-auto mx-5 md:mx-auto">
       <h2 className="text-xl font-bold mb-4">Account Security</h2>
 
-      <div className="w-full bg-green-300 px-4 py-4 border rounded-md flex   justify-between gap-4">
+      <div className="w-full bg-[#C7F7C1] px-4 py-4 border rounded-md flex   justify-between gap-4">
         <div className="flex flex-col ">
           <h4 className="text-lg font-semibold"> Switch to Solver </h4>
           <p className="text-sm text-gray-500">
@@ -25,7 +25,7 @@ const AccountSettings = () => {
           <button
             type="button"
             onClick={handleSwitchAccount}
-            className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
+            className="bg-[#00894E] text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
           >
             Switch Account
           </button>

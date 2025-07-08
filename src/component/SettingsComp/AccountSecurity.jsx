@@ -33,7 +33,7 @@ const AccountSecurity = () => {
   };
   return (
     <>
-      <section className="bg-white p-6 rounded-xl shadow-md max-w-[700px] w-full mx-auto mx-5 md:mx-auto">
+      <section className="bg-white p-6 rounded-xl shadow-md max-w-[700px] w-full mx-auto md:mx-auto">
         <h2 className="text-xl font-bold mb-4">Account Security</h2>
 
         <form className="space-y-4 mb-6" onSubmit={handlePasswordChange}>
@@ -108,7 +108,7 @@ const AccountSecurity = () => {
 
           <button
             type="submit"
-            className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
+            className="bg-[#047857] text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
           >
             Update Password
           </button>
@@ -132,7 +132,7 @@ const AccountSecurity = () => {
                 checked={twoFactorEnabled}
                 onChange={() => setTwoFactorEnabled(!twoFactorEnabled)}
               />
-              <div className="w-11 h-6 bg-gray-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-green-400 rounded-full peer dark:bg-gray-700 peer-checked:bg-green-600 transition-all duration-200"></div>
+              <div className="w-11 h-6 bg-gray-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-[#00894E] rounded-full peer dark:bg-gray-700 peer-checked:bg-[#00894E] transition-all duration-200"></div>
               <div className="absolute left-0.5 top-0.5 bg-white w-5 h-5 rounded-full transition-all duration-200 peer-checked:translate-x-full peer-checked:left-0.5"></div>
             </label>
           </div>

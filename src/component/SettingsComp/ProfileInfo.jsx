@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 
 const SettingsForm = () => {
   const DEFAULT_AVATAR =
-    "https://ui-avatars.com/api/?name=John+Doe&background=10b981&color=fff&size=80";
+    "/profile.png";
 
   const [fullName, setFullName] = useState("John Doe");
   const [email, setEmail] = useState("johndoe@university.edu");
@@ -44,11 +44,11 @@ const SettingsForm = () => {
 
   return (
     <>
-      <section className="bg-white p-6 rounded-xl shadow-md max-w-[700px] w-full mx-auto mx-5 md:mx-auto">
+      <section className="bg-white p-6 rounded-xl shadow-md max-w-[700px] w-full mx-auto md:mx-auto">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-lg font-bold">Profile Information</h2>
           <button className="text-sm text-blue-500">
-            <FaPen className="text-green-600" />
+            <FaPen className="text-[#00894E]" />
           </button>
         </div>
 
@@ -73,7 +73,7 @@ const SettingsForm = () => {
               />
               <label
                 htmlFor="profile-upload"
-                className="absolute bottom-0 right-0 bg-green-500 p-1 rounded-full cursor-pointer"
+                className="absolute bottom-0 right-0 bg-[#00894E] p-1 rounded-full cursor-pointer"
               >
                 <FaCamera className="text-white text-xs" title="upload photo" />
               </label>
@@ -139,7 +139,7 @@ const SettingsForm = () => {
       {showPreview && (
         <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 ">
           <div
-            className="bg-white p-4 rounded-lg shadow-lg max-w-sm w-full relative mx-auto mx-5 md:mx-auto"
+            className="bg-white p-4 rounded-lg shadow-lg max-w-sm w-full relative mx-auto  md:mx-auto"
             ref={previewRef}
           >
             <button

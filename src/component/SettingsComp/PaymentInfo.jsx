@@ -83,7 +83,7 @@ const PaymentInfo = () => {
         <h2 className="text-xl font-bold mb-4">Payment Information</h2>
         <div className="mb-8">
           <label
-            className="text-sm font-medium text-gray-500 mb-2 flex block"
+            className="text-sm font-medium text-gray-500 mb-2 flex"
             htmlFor="preferredCurrency"
           >
             Preferred Currency
@@ -107,7 +107,7 @@ const PaymentInfo = () => {
         <div className="mb-8 flex justify-between items-center">
           <h3 className="text-lg font-bold mb-2">Payment Method</h3>
           <button
-            className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
+            className="bg-[#00894E] text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
             onClick={handleAddMethod}
             type="button"
           >
