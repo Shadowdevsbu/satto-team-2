@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Proposals() {
   return (
-    <main className="flex-1 bg-[#F9F9F9] p-6 min-h-screen font-sans text-[#1F2937]">
+    <main className="flex-1 bg-[#F9F9F9] p-6 min-h-screen text-[#1F2937]">
       {/* Page Title */}
       <h1 className="text-2xl font-bold">My Proposals</h1>
       <p className="text-sm text-gray-500 mt-1">
-        Track all tasks you’ve applied for — see which are pending, accepted, rejected, or completed.
+        Track all tasks you have applied for — see which are pending, accepted, rejected, or completed.
       </p>
 
       {/* Stats Card */}
@@ -52,7 +52,7 @@ export default function Proposals() {
         <div className="bg-white rounded-lg p-4 border shadow-sm">
           <div className="flex justify-between items-start">
             <div>
-              <p className="font-semibold">CSC101 – Data Analysis Report</p>
+              <p className="font-semibold">CSC101: Data Analysis Report</p>
               <div className="flex gap-3 text-xs text-gray-500 mt-1">
                 <span className="bg-blue-100 text-blue-600 px-2 py-0.5 rounded-full font-medium">Computer Science</span>
                 <span>Budget: ₦2,500</span>
@@ -64,7 +64,7 @@ export default function Proposals() {
             </div>
             <div className="flex py-7 items-end gap-2">
               <span className="text-xs bg-green-200 text-green-800 px-3 py-0.5 rounded-full">Accepted</span>
-              <a href="#"  className="bg-green-600 text-white text-xs px-4 py-1 rounded hover:bg-green-700 transition">Go to Task</a> 
+              <a href="#"  className="bg-[#15833F] text-white text-xs px-4 py-1 rounded hover:bg-green-700 transition">Go to Task</a> 
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@ export default function Proposals() {
         <p className="text-sm text-gray-500 mt-1">
           Discover new tasks that match your skills and expertise.
         </p>
-        <a href="#" className="inline-block mt-4 bg-green-600 text-white px-4 py-2 text-sm rounded hover:bg-green-700 transition">
+        <a href="#" className="inline-block mt-4 bg-[#15833F] text-white px-4 py-2 text-sm rounded hover:bg-green-700 transition">
           Browse Tasks
         </a>
       </div>
