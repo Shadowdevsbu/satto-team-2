@@ -10,6 +10,8 @@ import SettingsPage from './pages/SettingsPage';
 import StudentHomeLayout from './pages/layout/StudentHomeLayout';
 import SolverHomeLayout from './pages/layout/SolverHomeLayout';
 import SolverEarnings from './pages/solver/earnings-page';
+import Solverproposals from './pages/solver/proposals-page';
+
 
 const App = () => {
   return (
@@ -29,6 +31,8 @@ const App = () => {
      <Route path="/solver" element={<SolverHomeLayout />}>
   <Route path="dashboard" element={<SolverDashboard />} />
   <Route path="earnings" element={<SolverEarnings />} />
+    <Route path="proposals" element={<Solverproposals />} />
+
   <Route path="settings" element={<SettingsPage />} />
  
 </Route>
