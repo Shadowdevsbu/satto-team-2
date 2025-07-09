@@ -13,9 +13,9 @@ import { RiLayout3Fill } from "react-icons/ri";
 const Sidebar = () => {
   const menuItems = [
     { label: 'Dashboard', path: '/student/dashboard', icon: <RiLayout3Fill size={18} /> },
-    { label: 'Post Task', path: '/dashboard/post-task', icon: <FaPen size={18} /> },
-    { label: 'My tasks', path: '/dashboard/tasks', icon: <FaTasks  /> },
-    { label: 'Messages', path: '/dashboard/messages', icon: <FaComments /> },
+    { label: 'Post Task', path: '/student/post-task', icon: <FaPen size={18} /> },
+    { label: 'My tasks', path: '/student/tasks', icon: <FaTasks  /> },
+    { label: 'Messages', path: '/student/messages', icon: <FaComments /> },
     { label: 'Settings', path: '/dashboard/settings', icon: <FaCog /> },
     { label: 'Payments', path: '/dashboard/payments', icon: <FaMoneyCheckAlt /> },
   ];
