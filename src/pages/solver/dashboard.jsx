@@ -57,7 +57,7 @@ const SolverDashboard = () => {
         <div className="relative z-10">
           <h2 className="text-3xl font-bold mb-2">Welcome back, {userName}!</h2>
           <p className="text-lg max-w-[420px] mb-4">
-          You’ve submitted 5 proposals this month, 2 tasks are in
+          You ve submitted 5 proposals this month, 2 tasks are in
           progress. Keep solving and earning
           </p>
           <p className="text-sm">{currentDate}</p>

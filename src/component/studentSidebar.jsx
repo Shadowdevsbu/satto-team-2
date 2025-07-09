@@ -16,8 +16,8 @@ const Sidebar = () => {
     { label: 'Post Task', path: '/student/post-task', icon: <FaPen size={18} /> },
     { label: 'My tasks', path: '/student/tasks', icon: <FaTasks  /> },
     { label: 'Messages', path: '/student/messages', icon: <FaComments /> },
-    { label: 'Settings', path: '/dashboard/settings', icon: <FaCog /> },
-    { label: 'Payments', path: '/dashboard/payments', icon: <FaMoneyCheckAlt /> },
+    { label: 'Settings', path: '/student/settings', icon: <FaCog /> },
+    { label: 'Payments', path: '/student/payment', icon: <FaMoneyCheckAlt /> },
   ];
 
   return (
