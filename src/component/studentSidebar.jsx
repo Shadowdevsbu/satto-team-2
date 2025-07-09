@@ -8,15 +8,16 @@ import {
   FaMoneyCheckAlt,
   FaSignOutAlt,
 } from 'react-icons/fa';
+import { RiLayout3Fill } from "react-icons/ri";
 
 const Sidebar = () => {
   const menuItems = [
-    { label: 'Dashboard', path: '/dashboard', icon: <FaTachometerAlt /> },
-    { label: 'Post Task', path: '/dashboard/post-task', icon: <FaPen /> },
-    { label: 'My tasks', path: '/dashboard/tasks', icon: <FaTasks /> },
+    { label: 'Dashboard', path: '/student/dashboard', icon: <RiLayout3Fill size={18} /> },
+    { label: 'Post Task', path: '/dashboard/post-task', icon: <FaPen size={18} /> },
+    { label: 'My tasks', path: '/dashboard/tasks', icon: <FaTasks  /> },
     { label: 'Messages', path: '/dashboard/messages', icon: <FaComments /> },
-    { label: 'Settings', path: '/dashboard/settings', icon: <FaCog /> },
-    { label: 'Payments', path: '/dashboard/payments', icon: <FaMoneyCheckAlt /> },
+    { label: 'Settings', path: '/student/settings', icon: <FaCog /> },
+    { label: 'Payments', path: '/student/payment', icon: <FaMoneyCheckAlt /> },
   ];
 
   return (
@@ -29,7 +30,9 @@ const Sidebar = () => {
             to={item.path}
             className={({ isActive }) =>
               `flex items-center px-3 py-2 rounded-md hover:bg-gray-100 transition ${
-                isActive ? 'bg-green-200 text-black' : 'text-gray-600'
+                isActive ? 
+                  "bg-[#C7F7C1] text-black border-l-4 border-[#00894E]"
+                  : "text-gray-700 hover:bg-gray-100"
               }`
             }
           >
