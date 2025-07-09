@@ -108,8 +108,8 @@ const LandingPage = () => {
           <a href="#get-started" className="flex items-center gap-2 bg-green-700 text-white py-3 px-6 rounded-full hover:bg-green-800 transition">
             <Rocket size={18} /> Get started
           </a>
-          <a href="#learn-more" className="flex items-center gap-2 bg-white text-black py-3 px-6 rounded-full shadow hover:bg-gray-200 transition">
-            <Lightbulb size={18} /> Learn more
+          <a href="/find-task" className="flex items-center gap-2 bg-white text-black py-3 px-6 rounded-full shadow hover:bg-gray-200 transition">
+            <Lightbulb size={18} /> Explore gigs
           </a>
         </div>
 
@@ -180,7 +180,7 @@ const LandingPage = () => {
             <Rocket size={18} /> Post a Task
           </a>
           <a href="#explore-gigs" className="flex items-center gap-2 bg-white text-gray-800 py-3 px-6 rounded-md shadow hover:bg-gray-100 transition">
-            <Lightbulb size={18} /> Explore gigs
+            <Lightbulb size={18} /> Learn more
           </a>
         </div>
       </section>
