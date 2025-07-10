@@ -53,7 +53,7 @@ const SignIn = () => {
 
             {/* Forgot Password */}
             <div className="text-right text-sm text-gray-500 hover:underline cursor-pointer">
-              Forgot Password?
+              <a href="/auth/forgot-password">Forgot Password?</a>
             </div>
 
             {/* Login Button */}
