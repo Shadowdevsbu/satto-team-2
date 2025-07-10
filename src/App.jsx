@@ -17,6 +17,7 @@ import Solverproposals from './pages/solver/proposals-page';
 import SignUp from './pages/auth/signup';
 import SignIn from './pages/auth/signin';
 import ForgotPassword from './pages/auth/forgot-pass';
+import ResetPassword from './pages/auth/reset-pass';
 
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
     <Route path='/auth/signup' element={<SignUp />} />
     <Route path='/auth/signin' element={<SignIn />} />
     <Route path='auth/forgot-password' element={<ForgotPassword />}/>
+    <Route path='auth/reset-password' element={<ResetPassword />}/>
 
       {/* Student Routing */}
       <Route path="/student" element={<StudentHomeLayout />}>

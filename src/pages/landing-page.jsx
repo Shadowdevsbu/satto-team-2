@@ -90,7 +90,7 @@ const LandingPage = () => {
             <a key={i} href="#" className="hover:text-green-700 transition">{label}</a>
           ))}
         </div>
-        <a href="#signup" className="bg-black text-white px-6 py-2 rounded-md hover:bg-green-700 transition">Sign Up</a>
+        <a href="/auth/signup" className="bg-black text-white px-6 py-2 rounded-md hover:bg-green-700 transition">Sign Up</a>
       </nav>
 
       {/* Hero Section */}
