@@ -102,7 +102,7 @@ const SignUp = () => {
           <div className="mt-10 text-center text-sm text-gray-600">
             Already have an account?
             <a
-              href="#"
+              href="/auth/signin"
               className="ml-2 inline-block px-6 py-2 bg-black text-white rounded-md font-medium hover:bg-gray-800"
             >
               Login
