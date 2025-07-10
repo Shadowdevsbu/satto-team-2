@@ -167,7 +167,7 @@ const StudentMyTask = () => {
   const tabs = ["All", "In Progress", "Submitted", "Completed", "Cancelled"];
 
   return (
-    <div className="bg-[#F5F5F5] p-8 font-sans w-full min-h-screen">
+    <div className=" p-8 w-full min-h-screen">
       <h1 className="text-3xl font-bold text-[#404040]">My Tasks</h1>
       <p className="text-gray-600 mt-2">
         View and manage your submitted assignments, track progress, and follow

@@ -2,7 +2,7 @@ import React from 'react';
 
 const StudentPostTask = () => {
   return (
-    <div className="bg-white p-24 rounded-lg shadow-sm w-full max-w-screen-2xl mx-auto">
+    <div className=" p-24 rounded-lg shadow-sm w-full max-w-screen-2xl mx-auto">
       <h1 className="text-3xl font-bold text-[#404040]">Post a New Task</h1>
       <p className="text-gray-600 mt-2">
         Fill out the form to describe your assignment and match with the right
