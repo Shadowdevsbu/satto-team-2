@@ -14,6 +14,7 @@ import StudentHomeLayout from './pages/layout/StudentHomeLayout';
 import SolverHomeLayout from './pages/layout/SolverHomeLayout';
 import SolverEarnings from './pages/solver/earnings-page';
 import Solverproposals from './pages/solver/proposals-page';
+import SignUp from './pages/auth/signup';
 
 
 const App = () => {
@@ -22,6 +23,8 @@ const App = () => {
    <Route path='/' element={<LandingPage />}/>
    <Route path='/find-task' element={<FindTask />}/>
   
+      {/* Auth Routing */}
+    <Route path='/auth/signup' element={<SignUp />} />
 
       {/* Student Routing */}
       <Route path="/student" element={<StudentHomeLayout />}>
