@@ -15,6 +15,7 @@ import SolverHomeLayout from './pages/layout/SolverHomeLayout';
 import SolverEarnings from './pages/solver/earnings-page';
 import Solverproposals from './pages/solver/proposals-page';
 import SignUp from './pages/auth/signup';
+import SignIn from './pages/auth/signin';
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
   
       {/* Auth Routing */}
     <Route path='/auth/signup' element={<SignUp />} />
+    <Route path='/auth/signin' element={<SignIn />} />
 
       {/* Student Routing */}
       <Route path="/student" element={<StudentHomeLayout />}>
