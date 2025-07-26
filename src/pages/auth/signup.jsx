@@ -15,7 +15,9 @@ const SignUp = () => {
    
   };
 
-
+const handleGoogle = async () => {
+  window.location.href = 'http://localhost:3000/auth/google';
+}
   return (
     <div className="flex h-screen">
       {/* Left Column: Sign Up Form */}
@@ -93,7 +95,9 @@ const SignUp = () => {
             <button
               type="button"
               className="w-full flex items-center justify-center py-2 border border-gray-300 rounded-md text-sm font-medium bg-white hover:bg-gray-50"
+              onClick={handleGoogle}
             >
+            
               <FcGoogle className="h-5 w-5 mr-2" />
               Continue with Google
             </button>
