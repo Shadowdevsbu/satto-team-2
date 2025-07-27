@@ -40,7 +40,7 @@ const Sidebar = () => {
         ))}
       </nav>
 
-      {/* Logout at bottom */}
+   
       <div className="pt-6 border-t mt-4">
         <div className="flex items-center gap-3 px-4 py-2 text-[#404040] hover:bg-red-100 rounded-md cursor-pointer text-sm font-medium">
           <IoLogOut size={18} />
