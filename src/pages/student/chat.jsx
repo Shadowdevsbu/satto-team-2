@@ -87,7 +87,6 @@ const chatHistories = {
 };
 
 
-// child components
 
 const ChatListItem = ({ convo, isActive, onSelect }) => (
   <div
